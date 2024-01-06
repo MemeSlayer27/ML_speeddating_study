@@ -70,17 +70,17 @@ A reduction in recall isn't too harmful as long as there still is a sufficient n
 Below are the metrics the models achieved.
 
 **For logistic regression we got the following metrics**
-![Pasted image](images/Pasted image 20231009162051.png)
+![Pasted image](images/Pasted_image_20231009162051.png)
 Here we can see a minor improvement on the precision over the naive baseline (0.17 vs. 0.125), while the recall suffered a lot (0.5 vs. 1.0). However there are still plenty of cases where the model predicts positive.
 
 The error was 1-0.63=0.37. A great improvement over the naive baseline.
 
 **ROC-AUC for Logistic Regression**
-![Pasted image](images/Pasted image 20231009162122.png)
+![Pasted image](images/Pasted_image_20231009162122.png)
 *Shows that the model is at least a tiny bit predictive.*
 
 **Here are the metrics for LightGBM**
-![Pasted image](images/Pasted image 20231009162017.png)
+![Pasted image](images/Pasted_image_20231009162017.png)
 With LightGBM we achieved an improvement over Logistic Regression on all metrics except for recall for the positive case. However, as outlined above that isn't a big issue, and 0.40 is still sufficient.
 
 The precision for the positive case is fairly good here. It is a 2.5x improvement over the naive baseline, and overall indicates that almost a third of the positive cases are successful.
@@ -88,11 +88,11 @@ The precision for the positive case is fairly good here. It is a 2.5x improvemen
 The error was 1-0.82=0.18. A great improvement over logistic regression.
 
 **The ROC-AUC for LightGBM**
-![Pasted image](images/Pasted image 20231009162318.png)
+![Pasted image](images/Pasted_image_20231009162318.png)
 *Here we can see clear improvement over logistic regression.*
 
 **Also as a curiosity, the feature importances for LightGBM.**
-![Pasted image](images/Pasted image 20231009162529.png)
+![Pasted image](images/Pasted_image_20231009162529.png)
 *Here we can see that the custom features I crafted turned out to be quite valuable.*
 ## Conclusion
 While both models improved upon the baseline (guessing mutual interest for all interactions), LightGBM showed much greater improvement, and thus we decided to go with it. All in all, the test error on LightGBM was 0.18 (1-accuracy).
