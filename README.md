@@ -1,5 +1,5 @@
 # Introduction
-Finding a suitable mate is a problem as old as sexual reproduction. Throughout times multiple approaches have emerged to attempt to solve this problem. Here we are trying to tackle it with the power of machine learning.
+Finding a suitable mate is a problem as old as sexual reproduction. Throughout times multiple approaches have emerged in attempt to solve this problem. Here we are trying to tackle it with the power of machine learning.
 
 The application domain is speed-dating and matchmaking. We are trying to predict if a man and a woman will experience mutual interest during an eight minute speed-dating interaction.
 
